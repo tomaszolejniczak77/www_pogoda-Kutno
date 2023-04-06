@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pogoda Kutno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/58537081b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onload="counter()">
+    <nav>
+      <h1>Pogoda Kutno</h1>
+    </nav>
+
+    <div id="nav2">
+      <div id="dayOfWeek"></div>
+      <div id="watch"></div>
+      <div id="cisnienieTeraz"></div>
+      <div id="kodPogody"></div>
+      <div id="temperaturaTeraz"></div>
+    </div>
+
+    <div id="nav3">
+      <div id="h04" class="nav3but"></div>
+      <div id="h12" class="nav3but"></div>
+      <div id="h20" class="nav3but"></div>
+
+      <div id="h04Tom" class="nav3but tom"></div>
+      <div id="h12Tom" class="nav3but tom"></div>
+      <div id="h20Tom" class="nav3but tom"></div>
+    </div>
+
+    <div id="chart">
+      <canvas id="myChart1" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart1Tom" style="width: 100%; max-width: 600px"></canvas>
+
+      <canvas id="myChart2" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart2Tom" style="width: 100%; max-width: 600px"></canvas>
+
+      <canvas id="myChart3" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart3Tom" style="width: 100%; max-width: 600px"></canvas>
+
+      <canvas id="myChart4" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart4Tom" style="width: 100%; max-width: 600px"></canvas>
+
+      <canvas id="myChart5" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart5Tom" style="width: 100%; max-width: 600px"></canvas>
+
+      <canvas id="myChart6" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart6Tom" style="width: 100%; max-width: 600px"></canvas>
+    </div>
+
+    <footer>
+      <a href="https://open-meteo.com/"
+        >Weather data from Open Meteo / Dane o pogodzie pochodzą z Open Meteo</a
+      >
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

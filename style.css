@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: goldenrod;
+}
+
+h1 {
+  font-size: 36px;
+  padding-left: 20px;
+}
+nav {
+  margin: 20px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #0082e6;
+  padding-right: 20px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+#watch {
+  color: green;
+  font-weight: bold;
+}
+
+#temperaturaTeraz {
+  font-weight: bold;
+}
+
+#pogoda {
+  color: goldenrod;
+}
+
+#nav3 {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-template-rows: repeat(1, 160px);
+  margin: 40px;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+}
+
+.nav3but {
+  background-color: #090761;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  line-height: 200%;
+  color: green;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav3but.tom {
+  background-color: green;
+  color: #090761;
+}
+
+.nav3but:hover {
+  scale: 1.25;
+}
+
+canvas {
+  background-color: white;
+}
+
+#chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#myChart1,
+#myChart2,
+#myChart3,
+#myChart4,
+#myChart5,
+#myChart6,
+#myChart1Tom,
+#myChart2Tom,
+#myChart3Tom,
+#myChart4Tom,
+#myChart5Tom,
+#myChart6Tom {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  color: goldenrod;
+}
+
+#kodPogody {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fa-cloud-rain,
+.fa-cloud-showers-heavy {
+  color: lightblue;
+}
+
+.fa-cloud,
+.fa-smog {
+  color: lightslategray;
+}
+
+.fa-snowflake,
+.fa-icicles {
+  color: snow;
+}
+
+.fa-cloud-sun {
+  color: rgb(18, 221, 204);
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+@media (max-width: 900px) {
+  #nav3 {
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(2, 160px);
+    justify-content: space-around;
+  }
+
+  .nav3but:hover {
+    scale: 1.10;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    display: block;
+  }
+
+  .home {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .home a {
+    padding: 10px 0;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  #nav2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #nav3 {
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(3, 160px);
+    justify-content: space-around;
+    grid-template-areas: 
+    'today1 tomorrow1'
+    'today2 tomorrow2'
+    'today3 tomorrow3';
+  }
+
+  #h04{
+    grid-area: today1;
+  }
+
+  #h04Tom{
+    grid-area: tomorrow1;
+  }
+
+  #h12{
+    grid-area: today2;
+  }
+
+  #h12Tom{
+    grid-area: tomorrow2;
+  }
+
+  .nav3but:hover {
+    scale: 1;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
