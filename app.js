@@ -141,6 +141,14 @@ fetch(
           x = '<i class="fa-solid fa-icicles fa-xl"></i>';
           break;
 
+        case 53:
+        x = `<i class="fa-solid fa-umbrella fa-xl"></i>`;
+          break;
+          
+        case 51:
+        x = `<i class="fa-solid fa-umbrella fa-xl"></i>`;
+          break;
+
         case 77:
           x = '<i class="fa-regular fa-snowflake fa-xl"></i>';
           break;

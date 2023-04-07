@@ -114,7 +114,9 @@ footer a {
 }
 
 .fa-cloud-rain,
-.fa-cloud-showers-heavy {
+.fa-cloud-showers-heavy,
+.fa-umbrella 
+ {
   color: lightblue;
 }
 
